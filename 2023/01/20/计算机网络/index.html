@@ -1,0 +1,434 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>计算机网络 | Mosa5aur</title><meta name="author" content="Mosa5aur"><meta name="copyright" content="Mosa5aur"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1.计算机网络概述   internet:通用名词，泛指多个计算机网络连接而成的网络。协议可以是任意的    Internet:泛指全球最大的特定计算机网络    边缘部分:由所有链接在互联网上的主机组成。包括智能摄像头、手机、智能手表  处在Internet边缘的部分就是连接在Internet上的所有主机。这些主机又称为端系统(end system)  主机A和B通信，实际上指的是运行在主机A上">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络">
+<meta property="og:url" content="http://example.com/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/index.html">
+<meta property="og:site_name" content="Mosa5aur">
+<meta property="og:description" content="1.计算机网络概述   internet:通用名词，泛指多个计算机网络连接而成的网络。协议可以是任意的    Internet:泛指全球最大的特定计算机网络    边缘部分:由所有链接在互联网上的主机组成。包括智能摄像头、手机、智能手表  处在Internet边缘的部分就是连接在Internet上的所有主机。这些主机又称为端系统(end system)  主机A和B通信，实际上指的是运行在主机A上">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/cover1.jpg">
+<meta property="article:published_time" content="2023-01-20T11:50:11.000Z">
+<meta property="article:modified_time" content="2023-01-20T12:58:27.069Z">
+<meta property="article:author" content="Mosa5aur">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/cover1.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '计算机网络',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-01-20 20:58:27'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = url => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      link.onload = () => resolve()
+      link.onerror = () => reject()
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/mycss.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> Images</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/cover1.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Mosa5aur"><span class="site-name">Mosa5aur</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> Images</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">计算机网络</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-20T11:50:11.000Z" title="发表于 2023-01-20 19:50:11">2023-01-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-20T12:58:27.069Z" title="更新于 2023-01-20 20:58:27">2023-01-20</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="计算机网络"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="1-计算机网络概述"><a href="#1-计算机网络概述" class="headerlink" title="1.计算机网络概述"></a>1.计算机网络概述</h2><p>   internet:通用名词，泛指多个计算机网络连接而成的网络。协议可以是任意的</p>
+<p>   Internet:泛指全球最大的特定计算机网络</p>
+<p>   边缘部分:由所有链接在互联网上的主机组成。包括智能摄像头、手机、智能手表</p>
+<ul>
+<li><p>处在Internet边缘的部分就是连接在Internet上的所有主机。这些主机又称为<strong>端系统(end system)</strong></p>
+</li>
+<li><p>主机A和B通信，实际上指的是运行在主机A上的某个程序和运行在主机B上的另一个程序程序进行通信</p>
+</li>
+<li><p>计算机进程之间的通信简称为<strong>计算机之间通信</strong></p>
+</li>
+<li><p>在网络边缘的end system中运行的程序之间的通信方式可以划分为</p>
+</li>
+</ul>
+<pre><code>1. C/S Clinet/Server Client和Server都是指通信中所涉及的两个应用程序
+
+2. 对等方式(P2P)方式: Peer-to-Peer方式
+
+    - 两个主机在通信时并不区分哪一个是服务请求还是服务提供方
+
+    - 只要两个主机都运行了P2P软件，它们就可以进行平等的、对等连接通信
+
+    - P2P连接方式从本质上看仍然是使用客户服务器方式，只是每一个主机既可以作为服务端也可以作为客户端
+
+    - P2P也会经过服务器，进行管理
+    
+    在网络核心部分起特殊作用的是**router(路由器)**
+</code></pre>
+<h3 id="三种交换方式："><a href="#三种交换方式：" class="headerlink" title="三种交换方式："></a>三种交换方式：</h3><ol>
+<li><p>Circuit Switching电路交换</p>
+<ul>
+<li><p>建立连接(分配通信资源)</p>
+</li>
+<li><p>通话(一直占用通信资源)</p>
+</li>
+<li><p>释放连接(归还通信资源)</p>
+</li>
+</ul>
+</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/440003114239686.png"></p>
+<ol start="2">
+<li>Packet Switching分组交换</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/563243314227553.png"><br>边缘系统连接到核心系统进行通信</p>
+<ul>
+<li><p>采用<strong>存储转发</strong>技术。把一个message(报文)划分为几个分组后在进行传送，在每个数据段前面加上必要的控制信息组成的header后，构成了一个packet(分组)，又称为<strong>包</strong>,header可成为包头，用来进行差错校验</p>
+</li>
+<li><p>$packet + header) * n &#x3D; message$</p>
+</li>
+</ul>
+<ol start="3">
+<li>Message Switching(报文交换): 不分组的进行交换，同样采取存储转发技术</li>
+</ol>
+<h3 id="网络结构"><a href="#网络结构" class="headerlink" title="网络结构"></a>网络结构</h3><ol>
+<li><p>星形结构</p>
+</li>
+<li><p>总线结构</p>
+</li>
+<li><p>环形结构</p>
+</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/475201515247719.png"></p>
+<ul>
+<li><p>这种结构的网络形式主要应用于令牌网中，各设备直接通过电缆串接，最后形成一个闭环，整个网络发送的信息在这个环路中传递，通常称之为”<strong>令牌环网</strong>“</p>
+</li>
+<li><p>实际情况，环的两端是通过阻抗匹配器来实现环的封闭，受限于地理位置等环两端的物理连接很难实现</p>
+</li>
+</ul>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/346772115240388.png"></p>
+<p>Token在闲状态不断在环网中传递，当有一台主机想要传输数据，它取得令牌，将Token修改为忙状态，并且绕环一圈告知所有环内其他主机，然后获得令牌的主机开始占用信道发送数据，发送完毕后又将Token修改为闲状态以为下一台主机的传输做准备。</p>
+<ol start="4">
+<li>网状型</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/45303115236943.png"></p>
+<ul>
+<li>每一个节点(交换机&#x2F;路由器)都至少和其他两个节点相连接，具有较高可靠性，但结构复杂，费用较高</li>
+<li>可选用最佳路径，传输延迟低</li>
+</ul>
+<p>应用最广泛的是星形结构(局域网)和网状型结构。</p>
+<h3 id="性能指标"><a href="#性能指标" class="headerlink" title="性能指标"></a>性能指标</h3><ol>
+<li><p>速率</p>
+<p> 单位:bit&#x2F;s</p>
+<p> 计算机发送的信号是以二进制数字形式的，连接在计算机网络上的主机在数字信道上传送比特数据的速率，也成为<strong>比特率</strong>或<strong>数据率</strong></p>
+</li>
+<li><p>带宽</p>
+<p> 单位:bit&#x2F;s</p>
+<p> 在计算机网络中，带宽用来表示网络中某通道传送数据的能力，因此网络带宽表示在单位时间内网络中的某信道能通过的<strong>最高数据率</strong></p>
+</li>
+<li><p>吞吐量</p>
+<p> 表示在单位时间内通过某个网络(或信道、接口)的数据量</p>
+<p> 吞吐率与宽带的区别是吞吐量代表的是实际而带宽代表的是理论最大</p>
+</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/2745809221261.png"></p>
+<ol start="4">
+<li><p>时延(delay或latency)</p>
+<p> 数据从网络的一段传送到另一端所需的时间。它有时也成为延迟或迟延</p>
+</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/219831110247720.png"></p>
+<p>   网络中的时延是由以下几个不同的部分组成的：</p>
+<ul>
+<li>发送时延 $发送时延&#x3D;数据帧长度(bit)&#x2F;发送速率(bit&#x2F;s)$</li>
+</ul>
+<p>   <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/241390710227554.png"></p>
+<p>   在家庭中，边缘设备连接至路由器访问网络，在这种结构中，发送时延的计算应取从主机发送到路由器并由路由器发出的时延作为发送时延，并受最低速率限制</p>
+<ul>
+<li><p>传播时延 $传播时延&#x3D;信道长度(m)&#x2F;电磁波在信道上的传播速率(m&#x2F;s)$</p>
+<p>   <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/353421110240389.png"></p>
+</li>
+<li><p>处理时延</p>
+</li>
+</ul>
+<p>处理时延指的是主机或者路由器在收到而分组信息时花费的时间，一般忽略不计，因为没法估量</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/216961610236944.png"></p>
+<ol start="5">
+<li><p>往返时间</p>
+<p>RTT(Round-Trip Time)重要指标，表示从发送端将数据发送道传输媒介开始，到发送端收到来自接收端的确认总共经历的时间(不包含发送时延).</p>
+<p>RTT由三部分决定: 链路的传播时间、末端系统的处理时间、路由器的缓存中的排队和处理时间，其中前两个值作为一个TCP连接相对固定，而排队和处理时间会随着整个网路拥塞成都变化而变化，故<strong>RTT的变化在一定程度上反映了网络拥塞程度的变化</strong></p>
+<p>$有效数据率&#x3D;数据长度&#x2F;(发送时间+RTT(往返时间))$</p>
+<p>由A向B发送数据为例，发送时间为数据长度与自身发送速率的比值，而RTT包括A发送到B途中路由器的排队时延和传播时延以及由B发往A的确认信号达到A的总时间，在到达B后B会有一段处理时间并回复一个确认信号，暂且假定处理时间可以忽略不计，而确认信号的信息长度很短，故B的发送时间也可忽略不计</p>
+</li>
+<li><p>利用率</p>
+</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/236773610232698.png"></p>
+<ol start="7">
+<li><p>丢包率</p>
+<p>丢包率即分组丢失率，是指在一定的时间范围内，传输过程中丢失的分组数量与总分组数量的比率</p>
+<p>分组丢失主要有两种情况</p>
+<pre><code>- 分组在传输过程中出现误码，被结点丢掉
+
+- 分组到达一台队列已满的分组交换机时被丢弃，在通信量较大时就可能造成网络拥塞
+</code></pre>
+</li>
+</ol>
+<h2 id="2-计算机网络体系结构"><a href="#2-计算机网络体系结构" class="headerlink" title="2.计算机网络体系结构"></a>2.计算机网络体系结构</h2><h3 id="1-体系结构介绍"><a href="#1-体系结构介绍" class="headerlink" title="1.体系结构介绍"></a>1.体系结构介绍</h3><p>开放系统互连参考模型，简称OSI，共七层，从下往上为<strong>物理层、数据链路层、网络层、运输层、会话层、表示层、应用层</strong>，未流行</p>
+<p>TCP&#x2F;IP体系结构共四层，包括<strong>应用层、运输层、网际层和网络接口层</strong></p>
+<p>在学习计算机网络原理往往采取这种办法，即综合OSI和TCP&#x2F;IP的优点，采用一种只有五层协议的体系结构，都包括<strong>物理层、数据链路层、网络层、运输层、应用层</strong></p>
+<p>·<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/12140811248182.png"></p>
+<h4 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h4><p>   导向型：同轴电缆、双绞线、光纤<br>   非导向型：wifi、bluetooth</p>
+<h4 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h4><p>   在数据链路上传输的数据包，又称为<strong>帧</strong>（数据链路层是以帧为单位传输和处理的）</p>
+<p>   数据链路层的协议有很多种，但有三个基本问题是共同的。这三个基本问题是：<strong>封装成帧、透明传输和差错检测</strong></p>
+<ul>
+<li>封装成帧</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/255103116221261.png"></p>
+<p>   加帧头加帧尾，适当配合物理层做定位</p>
+<ul>
+<li><p>透明传输</p>
+<p> 保证帧信息解析正确</p>
+<p> 可能出现的错误情况</p>
+<ul>
+<li>帧具有SOH帧开始符和EOT帧结束符，当数据部分包含了与SOH、EOT相同的字节流，就会导致解析错误，可行的解决方式就是字节填充，在发送帧的时候对每一个数据内部与SOH、EOT或是ESC转义字符相同的在前面追加一个转义字符ESC，这样当接收方解析时，只需要看见一个转义字符与SOH、EOT和ESC组合时，删除一个转义字符即可完成正确解析，也能正确确认一个完整的帧。这样的操作都是在数据链路层上进行，而不需要给网络层带来任何负担</li>
+</ul>
+</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/410404516239687.png"></p>
+<p>   零比特填充法</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/376784816227554.png"></p>
+<p>   **MTU(Maximum Transfer Unit)**最大传送单元，规定了帧数据部分的长度上限，在上限以内帧越大越好，一般默认1518B</p>
+<ul>
+<li><p>差错检测</p>
+<p> <strong>误码率(Bit Error Rate)</strong> 出差的比特占总传输比特的比率</p>
+<p> FCS(Frame Check Sequence)帧校验序列发出方由一些差错校验算法如<strong>CRC循环冗余校验</strong>计算得出，接收方在收到后计算出一个FCS与接收到的数据帧中的FCS进行比较，判断FCS不能进行纠正，只能进行<strong>检错重传</strong>-可靠传输服务或者是<strong>丢弃差错帧</strong>-不可靠传输服务</p>
+</li>
+</ul>
+<h5 id="以太网"><a href="#以太网" class="headerlink" title="以太网"></a>以太网</h5><p>   以太网是一种计算机局域网技术，IEEE 802.3标准制定了以太网的技术标准，以太网是一种有线系统， 最初使用同轴电缆进行数据传输，后来发展使用双绞线或光纤</p>
+<p>   每个网络适配器都有一个全球唯一的MAC地址，而交换机和路由器往往拥有更多的网络接口，每个接口都配有一个MAC地址，所以一个路由器或者一个交换机有很多个MAC地址，同一台设备也可以安装多个网卡，配备多个MAC地址，所以MAC地址不能标识主机，只能标识一个网络接口</p>
+<p>   bit位流从右看向左<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/36691817247720.png"></p>
+<p>   MAC帧</p>
+<p>   <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/524462117240389.png"></p>
+<p>   进行单播，广播时，目的地址和源地址设定很容易，广播目的地址设置为FF-FF-FF-FF即可，当进行多播时，会发送多播帧，目的地址的MAC值的第一个字节应该为奇数，接收方收到该地址会对自己的多播组列表进行查询，如果多播帧在多播组列表内，则接受该信息</p>
+<p>   <strong>随机MAC地址</strong> 目前大多数移动设备都采取了随机MAC地址</p>
+<h5 id="交换机"><a href="#交换机" class="headerlink" title="交换机"></a>交换机</h5><p>主机A -&gt; 交换机1 -&gt;交换机2 -&gt; 主机B</p>
+<p>工作过程：各主机通过交换机的端口接入交换机，主机A在网络层获得待联系的主机B的MAC地址，通过交换机与主机B进行沟通，通过交换机 **存储转发(交换机进行核验在发送)&#x2F;直接转发(交换机不进行核验)**的方式给主机B发送消息。</p>
+<ul>
+<li><p>问题1 交换机怎么知道主机B在哪个端口</p>
+<p> 通过帧交换表和自学习算法，A -&gt; 交换机1，交换机1将A的MAC地址和A的端口记录到帧交换表，交换机查找主机B的记录</p>
+</li>
+</ul>
+<ol>
+<li><p>找到了，直接转发到主机B</p>
+</li>
+<li><p>找不到，进行泛洪，每一台在交换机中的主机将收到的信息与MAC帧目的地址进行匹配，不对就扔掉，交换机1的消息也传到了交换机2，交换机2先记录A的MAC地址和A在交换机1传入到交换机2的端口，并在交换机2上进行泛洪。</p>
+</li>
+</ol>
+<ul>
+<li><p>问题2 如果主机从交换机中拔出或两个主机交换，帧交换表怎么更新</p>
+<p>  帧交换表存在有效时间，会在有效时间结束后自动删除</p>
+</li>
+</ul>
+<p>稳定性情况：如果 交换机1 -&gt; 交换机2 -&gt; 交换机3或更复杂情况，如果各交换机至今连接唯一没有冗余，那么如果其中一条线故障，则就不能通信，不够稳定</p>
+<ul>
+<li><p>问题1 怎么提高稳定性</p>
+<p>  添加冗余线路，比如3个交换机之间两两连线</p>
+</li>
+<li><p>问题2 如果连线存在冗余线路，出现<strong>广播风暴</strong>怎么办</p>
+<p>  使用STP(Spanning Tree Protocol)生成树算法，构建一条唯一路径，阻塞不必要的路径，如果某条线路出现故障，重新构建路径即可，图唯一路径(最小生成树)</p>
+</li>
+</ul>
+<p>广播情况： 如果交换机结构复杂，根据自学习算法，越大的规模意味着越大的广播域，会占用很多不必要的网络资源。</p>
+<ul>
+<li><p>问题1 如何缩小广播域</p>
+<p>  <strong>VLAN技术</strong>会分割广播域，可以通过交换机进行配置，将各个交换机连接的主机分配进不同的VLAN里，使得同一vlan下的主机可以互相通信，不同VLAN下的主机不能相互通信，或者路由器不同端口会自动分割广播域，但相比交换机更昂贵</p>
+</li>
+</ul>
+<p>*问题2 配置VLAN</p>
+<pre><code>1. system-view
+2. 创建vlan域
+3. 配置端口状态，连接主机的端口设置为access,交换机和交换机之间端口设置为trunk ，即允许多个vlan通多，并设置允许不同vlan通过   
+4. 将连接主机端口设置vlan 
+</code></pre>
+<h4 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h4><p>路由器分割网络，相同网络号可以互相通信，不同网络之间通信通过路由器，路由器通过路由表进行选择下一跳</p>
+<h5 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a>IP地址</h5><p>IPv4的IP地址由网络号和主机号组成，可分为A、B、C、D、E五类</p>
+<pre><code>1. A类(网络号8位，第一位恒为0)
+
+00000001|[] - 01111111|[] 1_.0.0.1 - 126_.255.255.254，主机号全0和全1特殊用途不指派，网络号从1到126，最小网络号0保留不指派，最大网络号127留作回环地址
+
+2. B类(网络号16位，前两位恒为10)
+
+1000000000000000|[] - 1011111111111111|[] 128.0_.0.1 - 191.255_.255.254 _符号后为主机号
+
+3. C类(网络号24位，前三位恒为110)
+
+110000000000000000000000|[] - 110111111111111111111111|[] 192.0.0_.1 - 223.255.255.254 _符号后位主机号
+</code></pre>
+<p>子网掩码，借用某IP主机号进一步划分一个网络号</p>
+<h5 id="IP协议"><a href="#IP协议" class="headerlink" title="IP协议"></a>IP协议</h5><p>用户数据在网络层使用<strong>IP协议</strong>进行封装，交付给数据链路层，IP协议提供<strong>不可靠无连接</strong>的数据报传输服务，使用IP协议封装的数据成为<strong>IP数据报</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/200615017221262.png"><br>第二章ppt p50</p>
+<p>IP数据报的发送主机有路由表，查不到默认发给网关，网络号通过ip地址和子网掩码按位与获得，相同网络号<strong>直接交付</strong>，不同网络号<strong>间接交付</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/373471118239688.png"></p>
+<h5 id="路由表"><a href="#路由表" class="headerlink" title="路由表"></a>路由表</h5><p>计算机 -&gt; Internet : 首先将目的IP与子网掩码进行按位与运算得到网络号，然后将该网络号与自己的路由表进行匹配，如果匹配到则将数据转发到指定的下一跳，如果没有匹配到，则转发给目标地址为0.0.0.0所对应的下一跳，即默认路由</p>
+<ul>
+<li><p>如果我们发现主机不能够上网或不能ping通外网时，假如检查了IP地址、DNS等设置没有问题依然不能解决，我们可以查看系统的路由表中是否没有添加默认路由</p>
+</li>
+<li><p>每台主机都有自己的路由表</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 查看路由</span><br><span class="line">Windows: route print</span><br><span class="line"></span><br><span class="line">Linux: route -n</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">route -n add -net 网络号 gw 网关</span><br><span class="line"></span><br><span class="line">route -n delete -net 网络号</span><br></pre></td></tr></table></figure>
+
+<p>路由分为<strong>动态路由</strong>(协议:RIP、OSPF、IS-IS、BGP、IGRP&#x2F;EIGRP)或<strong>静态路由</strong>(由网络管理员手动配置的路由)</p>
+<h5 id="ARP高速缓存表-获取MAC地址"><a href="#ARP高速缓存表-获取MAC地址" class="headerlink" title="ARP高速缓存表(获取MAC地址)"></a>ARP高速缓存表(获取MAC地址)</h5><p>ARP协议用于网络层，仅针对同网络下的主机，为主机生成默认时限2分钟的ARP表。</p>
+<pre><code>ARP协议通过MAC封装并将目的地址设置为FF-FF-FF-FF来向全部同网络下的主机进行广播，发送ARP请求，请求中包括自己的IP、MAC地址和FF-FF-FF-FF以及目的IP等信息，所有同网络下的主机接收到ARP请求后，先解析目的IP与自己的IP进行按位与运算，如果一致，则将请求方的信息记录在自己的ARP高速缓存表中，并回应一个ARP响应，响应中包括自己的IP和MAC地址，传回到请求方，而目的IP与自己IP不同的主机则将包丢弃。
+
+由于ARP协议没有安全性检验，故可能会遭到攻击机的欺骗
+    
+1. 主机欺骗：主机A在没有发送ARP请求时，攻击机通过不断向A发送ARP响应，将主机A本来与其他主机通信的MAC修改为自己的MAC地址，IP地址不变，由于ARP协议没有安全性检验，且如果ARP为动态调整，则会直接修改自己的ARP高速缓存表，这样在A向原定主机发送消息通过交换机或路由器时，在数据链路层解析目的MAC时，就会错误解析并将数据发送给攻击机，以达到主机欺骗
+
+2. 网关欺骗：攻击机向路由器网关发送主机A的IP和自己的MAC地址作为ARP响应，修改路由器关于A的路由表，这样在公网给主机A发送数据时，路由器就会错误的把信息发送给攻击机，以达到网关欺骗
+</code></pre>
+<h5 id="特殊IP地址"><a href="#特殊IP地址" class="headerlink" title="特殊IP地址"></a>特殊IP地址</h5><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/41573811221263.png"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/233503811239689.png"></p>
+<h4 id="运输层"><a href="#运输层" class="headerlink" title="运输层"></a>运输层</h4><p>TCP会用到IP地址，所以TCP&#x2F;IP不分家，强行剥离使其明确分层会增加很多的额外的开销，并不合算</p>
+<h5 id="端口号"><a href="#端口号" class="headerlink" title="端口号"></a>端口号</h5><p>短暂端口号:49152 - 65535留给客户选择暂时使用</p>
+<h5 id="TCP"><a href="#TCP" class="headerlink" title="TCP"></a>TCP</h5><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/382983016227556.png"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/580243016247722.png"></p>
+<h6 id="三次握手-核心"><a href="#三次握手-核心" class="headerlink" title="三次握手(核心)"></a>三次握手(核心)</h6><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/441982117240391.png"><br>要能够精准描述出来</p>
+<ul>
+<li>问题1 为什么不能进行二次握手</li>
+</ul>
+<p>如果进行二次握手，那么只要服务端接收到请求就会进入连接已建立，如果该请求是因为网络原因滞后传过来的，但客户端与服务器端已经完成了一次传输，客户端处于关闭状态，服务器达成连接已建立状态向客户发送请求的确认消息，但是因为客户端关闭了，发送不到，那么服务器会一直重传，占用服务器的资源。也就是不能轻易进入连接已建立状态，要有个缓冲</p>
+<h6 id="四次挥手-核心"><a href="#四次挥手-核心" class="headerlink" title="四次挥手(核心)"></a>四次挥手(核心)</h6><p>双方都可以释放连接</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/353945717236946.png"></p>
+<ul>
+<li>问题1 为什么TCP客户进程还需要经过2MSL后才能进入关闭状态</li>
+</ul>
+<p>客户关闭就不能打开了，而服务器如果最后一跳报文没有正确传给服务器，那么服务器由于超时重传机制会一直再发，而TCP没有等待直接关闭，那么服务器没法停止发送确认</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/94670118232700.png"></p>
+<h6 id="TCP可靠传输的实现"><a href="#TCP可靠传输的实现" class="headerlink" title="TCP可靠传输的实现"></a>TCP可靠传输的实现</h6><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/325030518250580.png"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/593183018248184.png"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/178723118245686.png"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/363843118226927.png"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/437923118249367.png"></p>
+<h5 id="UDP"><a href="#UDP" class="headerlink" title="UDP"></a>UDP</h5><p>单播应用: DNS域名解析 游览器缓存 -&gt; 操作系统缓存 -&gt; 路由缓存 -&gt; ISP DNS服务器 -&gt; 根服务器</p>
+<p>多播应用: 网咯视频会议、教学、视频监控等 只需要发一份信息就可以完成通信，不需要针对每一台主机单独进行，节约带宽</p>
+<p>广播应用: ARP缓存表 </p>
+<p>UDP编程，包的大小实际只有1k多，虽然可以达到64k，因为如果分片，有一个传输失败就都要丢弃，还不如直接设置为1k的包</p>
+<h5 id="TCP和UDP的区别"><a href="#TCP和UDP的区别" class="headerlink" title="TCP和UDP的区别"></a>TCP和UDP的区别</h5><p>TCP只能一对一，UDP可以一对多、多对一和多对多</p>
+<p>TCP: <strong>长连接</strong>，用于操作频繁，点对点通信，直到某一方主动关闭才结束，<strong>短连接</strong>，用于操作不频繁的点对点通讯，数据完成就断开</p>
+<h4 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h4><p>Http协议1.0&#x2F;1.1 短链接，长连接</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Mosa5aur</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">http://example.com/2023/01/20/计算机网络/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Mosa5aur</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/cover1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/01/20/HTML/" title="HTML"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">HTML</div></div></a></div><div class="next-post pull-right"><a href="/2023/01/20/hello-world/" title="Hello World"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Hello World</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Mosa5aur</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">1.计算机网络概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E4%BA%A4%E6%8D%A2%E6%96%B9%E5%BC%8F%EF%BC%9A"><span class="toc-number">1.1.</span> <span class="toc-text">三种交换方式：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.</span> <span class="toc-text">网络结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="toc-number">1.3.</span> <span class="toc-text">性能指标</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84"><span class="toc-number">2.</span> <span class="toc-text">2.计算机网络体系结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E4%BB%8B%E7%BB%8D"><span class="toc-number">2.1.</span> <span class="toc-text">1.体系结构介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%B1%82"><span class="toc-number">2.1.1.</span> <span class="toc-text">物理层</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82"><span class="toc-number">2.1.2.</span> <span class="toc-text">数据链路层</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%A5%E5%A4%AA%E7%BD%91"><span class="toc-number">2.1.2.1.</span> <span class="toc-text">以太网</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%A4%E6%8D%A2%E6%9C%BA"><span class="toc-number">2.1.2.2.</span> <span class="toc-text">交换机</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E5%B1%82"><span class="toc-number">2.1.3.</span> <span class="toc-text">网络层</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#IP%E5%9C%B0%E5%9D%80"><span class="toc-number">2.1.3.1.</span> <span class="toc-text">IP地址</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#IP%E5%8D%8F%E8%AE%AE"><span class="toc-number">2.1.3.2.</span> <span class="toc-text">IP协议</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%B7%AF%E7%94%B1%E8%A1%A8"><span class="toc-number">2.1.3.3.</span> <span class="toc-text">路由表</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ARP%E9%AB%98%E9%80%9F%E7%BC%93%E5%AD%98%E8%A1%A8-%E8%8E%B7%E5%8F%96MAC%E5%9C%B0%E5%9D%80"><span class="toc-number">2.1.3.4.</span> <span class="toc-text">ARP高速缓存表(获取MAC地址)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%89%B9%E6%AE%8AIP%E5%9C%B0%E5%9D%80"><span class="toc-number">2.1.3.5.</span> <span class="toc-text">特殊IP地址</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E8%BE%93%E5%B1%82"><span class="toc-number">2.1.4.</span> <span class="toc-text">运输层</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E5%8F%B7"><span class="toc-number">2.1.4.1.</span> <span class="toc-text">端口号</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#TCP"><span class="toc-number">2.1.4.2.</span> <span class="toc-text">TCP</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B-%E6%A0%B8%E5%BF%83"><span class="toc-number">2.1.4.2.1.</span> <span class="toc-text">三次握手(核心)</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B-%E6%A0%B8%E5%BF%83"><span class="toc-number">2.1.4.2.2.</span> <span class="toc-text">四次挥手(核心)</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#TCP%E5%8F%AF%E9%9D%A0%E4%BC%A0%E8%BE%93%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="toc-number">2.1.4.2.3.</span> <span class="toc-text">TCP可靠传输的实现</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#UDP"><span class="toc-number">2.1.4.3.</span> <span class="toc-text">UDP</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#TCP%E5%92%8CUDP%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">2.1.4.4.</span> <span class="toc-text">TCP和UDP的区别</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E5%B1%82"><span class="toc-number">2.1.5.</span> <span class="toc-text">应用层</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/01/20/test/" title="test"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="test"/></a><div class="content"><a class="title" href="/2023/01/20/test/" title="test">test</a><time datetime="2023-01-20T13:26:06.000Z" title="发表于 2023-01-20 21:26:06">2023-01-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/01/20/HTML/" title="HTML"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTML"/></a><div class="content"><a class="title" href="/2023/01/20/HTML/" title="HTML">HTML</a><time datetime="2023-01-20T11:50:11.000Z" title="发表于 2023-01-20 19:50:11">2023-01-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" title="计算机网络"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="计算机网络"/></a><div class="content"><a class="title" href="/2023/01/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" title="计算机网络">计算机网络</a><time datetime="2023-01-20T11:50:11.000Z" title="发表于 2023-01-20 19:50:11">2023-01-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/01/20/hello-world/" title="Hello World"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2023/01/20/hello-world/" title="Hello World">Hello World</a><time datetime="2023-01-20T05:48:26.636Z" title="发表于 2023-01-20 13:48:26">2023-01-20</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By Mosa5aur</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><script type="text/javascript" src="/js/fairyDustCursor.js"></script><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
